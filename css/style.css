@@ -1,0 +1,195 @@
+body{
+	font-family: Arial, sans-serif;/*Устанавливаем тип шрифта для всего body*/
+}
+nav{
+	width: 100%;/*Ширина Блока Навигации*/
+	height: 38px;/*Высота Блока Навигации*/
+	background: #259584;/*Цвет заливки*/
+}
+.logo{
+	color: #fff;/*Цвет текста*/
+	font-size: 22px;/*Размер шрифта*/
+	line-height: 40px;/*Размещение текста внутри блока Навигации*/
+	padding-left: 50px;/*Отступ слева*/
+	float: left;/*Нужно для размещения элементов блока Навигации на одной линии*/
+}
+.menu{
+	float: left;/*Нужно для размещения элементов блока Навигации на одной линии*/
+	padding-left: 800px;/*Отступ слева*/
+	color: #fff;/*Цвет текста*/
+	font-size: 20px;/*Размер шрифта*/
+}
+.menu li{
+	float: left;/*Нужно для размещения элементов блока Навигации на одной линии*/
+	font-size: 10px;/*Размер шрифта*/
+	line-height: 40px;/*Размещение текста внутри блока Навигации*/
+	color: #fff;/*Цвет текста*/
+	margin-right: 15px;/*Отступ с права после каждого блока меню*/
+	text-transform: uppercase;/*Сделаем все буквы - заглавными*/
+	padding-top: 7px;/*Отступ сверху*/
+}
+.main{
+	width: 100%;/*Высота центрального окна*/
+	height: calc(100% - 38px);/*Высота Центрльного окна 100% минус 40 пикселей отведенных на меню*/
+	background: url(../img/1762b4f42c3f546ea8caffef73ced1d4.jpg) center/cover no-repeat;/*Размещение изображения по центру окна*/
+}
+.title_container{
+	float: left;
+	padding-left: 320px;/*Отступ слева*/
+	padding-top: 230px;/*Отступ сверху*/
+	color: blueviolet;/*цвет текста*/
+	text-align: center;/*Отцентровка текста*/
+	font-family: Times New Roman, sans-serif;/*Устанавливаем тип шрифта*/
+}
+.title_container h1{/*Редактируем Главный заголовок*/
+	font-size: 60px;/*Устанавливаем размер шрифта для Заголовка h1*/
+	font-weight: bold;/*Делаем шрифт жирным*/
+}
+.title_container h4{/*Редактируем второй заголовок*/
+	margin-top: 15px/*Отступ сверху*/;
+	font-size: 25px;/*Устанавливаем размер шрифта для Заголовка h4*/
+	color: #49418d;
+}
+.title_container input{/*Редактируем кнопки*/
+	height: 30px;/*Установим высоту Кнопок*/
+	text-align: center;/*Делаем текст внутри кнопок по центру*/
+	margin-top: 15px/*Отступ сверху*/;
+	margin-right: 20px;/*Делаем отступ между кнопками*/
+	font-size: 20px;/*Устанавливаем размер шрифта для Кнопок*/
+	color: blueviolet;/*Устанавливаем цвет текста внутри кнопок*/
+	border: 2px solid blueviolet;/*Рисуем окантовку кнопок*/
+	background: none;/*Делаем заливку Кнопок прозрачной*/
+	border-radius: 7px;/*Закругляем углы рамки Кнопок*/
+	padding: 0px 16px;/*Ставим отступы от окантовки Кнопок сверху и снизу 0 пикселей, а с права и с лева 16 пикселей*/
+}
+.container_1{
+	width: 100%;/*Ширина Блока*/
+	height: 100%;/*Высота Блока*/
+	background: url(../img/insect-6033093_960_720.jpg) center/cover no-repeat;/*Цвет заливки*/
+}
+.container_1 h2{
+	text-align: center;
+	font-size: 45px;/*Устанавливаем размер шрифта для Заголовка h2*/
+	font-weight: bold;/*Делаем шрифт жирным*/
+	text-transform: uppercase;
+	font-family: Times New Roman, sans-serif;/*Устанавливаем тип шрифта*/
+	padding-top: 100px;
+}
+.exempl_blok{
+	margin-top: 30px;
+	margin-left: 507px;
+	border: 3px solid #fff;
+	border-radius: 100%;
+	width: 15%;
+	height: 20%;
+	overflow: hidden;
+}
+.container_1 p{
+	margin-top: 30px;
+	width: 70%;
+	text-align: center;
+	padding-left: 370px;
+	color: white;
+}
+.container_1 input{/*Редактируем кнопки*/
+	text-align: center;/*Делаем текст внутри кнопок по центру*/
+	height: 30px;/*Установим высоту Кнопок*/
+	margin: 50px 300px 300px 510px;
+	font-size: 20px;/*Устанавливаем размер шрифта для Кнопок*/
+	color: blueviolet;/*Устанавливаем цвет текста внутри кнопок*/
+	border: 2px solid blueviolet;/*Рисуем окантовку кнопок*/
+	background: none;/*Делаем заливку Кнопок прозрачной*/
+	border-radius: 7px;/*Закругляем углы рамки Кнопок*/
+	padding: 0px 16px;/*Ставим отступы от окантовки Кнопок сверху и снизу 0 пикселей, а с права и с лева 16 пикселей*/
+}
+.container_2{
+	width: 100%;/*Ширина Блока*/
+	height: 100%;/*Высота Блока*/
+	background: url(../img/heaven.png) center/cover no-repeat;/*Цвет заливки*/
+}
+.container_2 h2{
+	text-align: center;
+	font-size: 45px;/*Устанавливаем размер шрифта для Заголовка h2*/
+	font-weight: bold;/*Делаем шрифт жирным*/
+	text-transform: uppercase;
+	font-family: Times New Roman, sans-serif;/*Устанавливаем тип шрифта*/
+	padding-top: 200px;
+}
+.skills{
+	float: left;
+	text-size: 10px;
+	margin-right: 15px;/*Отступ с права после каждого блока меню*/
+}
+.skills li{
+	float: left;
+	width: 250px;
+	margin-top: 100px;
+	margin-left: 30px;
+	text-align: center;
+	margin-right: 10px;/*Отступ с права после каждого блока*/
+	line-height: 20px;/*Размещение текста внутри блока*/
+}
+.skills h3{
+	color: #f78755;
+}
+.container_3{
+	width: 100%;/*Ширина Блока*/
+	height: 100%;/*Высота Блока*/
+	background: url(../img/green_fon.jpg) center/cover no-repeat;/*Цвет заливки*/
+}
+.container_3 h2{
+	text-align: center;
+	font-size: 45px;/*Устанавливаем размер шрифта для Заголовка h2*/
+	font-weight: bold;/*Делаем шрифт жирным*/
+	text-transform: uppercase;
+	font-family: Times New Roman, sans-serif;/*Устанавливаем тип шрифта*/
+	padding-top: 30px;
+}
+p.bloktext{
+	text-align: center;
+	font-size: 15px;
+}
+.site{
+	display: block;
+	margin: auto;
+	margin-top: 20px;
+}
+.calc{
+	background: url(../img/calc_fon.jpg) center/cover no-repeat;/*Цвет заливки*/
+	width: 100%;/*Ширина Блока*/
+	height: 100%;/*Высота Блока*/
+}
+.calc h2{
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+	padding-top: 200px;
+}
+.calc h3{
+	margin-top: 20px;
+	margin-left: 400px;
+	font-weight: bold;
+	padding-bottom: 5px;
+}
+.calc select{
+	margin-left: 400px;
+	width: 410px;
+	height: 25px;
+	background: #eeee;
+}
+.calc p{
+	margin-left: 400px;
+	font-weight: bold;
+	padding-top: 15px;
+}
+.calc input{/*Редактируем кнопки*/
+	text-align: center;/*Делаем текст внутри кнопок по центру*/
+	height: 30px;/*Установим высоту Кнопок*/
+	margin: 50px 300px 300px 510px;
+	font-size: 20px;/*Устанавливаем размер шрифта для Кнопок*/
+	color: blueviolet;/*Устанавливаем цвет текста внутри кнопок*/
+	border: 2px solid blueviolet;/*Рисуем окантовку кнопок*/
+	background: none;/*Делаем заливку Кнопок прозрачной*/
+	border-radius: 7px;/*Закругляем углы рамки Кнопок*/
+	padding: 0px 16px;/*Ставим отступы от окантовки Кнопок сверху и снизу 0 пикселей, а с права и с лева 16 пикселей*/
+}
