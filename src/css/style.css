@@ -15,7 +15,7 @@ nav{
 }
 .menu{
 	float: left;/*Нужно для размещения элементов блока Навигации на одной линии*/
-	padding-left: 700px;/*Отступ слева*/
+	padding-left: 600px;/*Отступ слева*/
 	color: #fff;/*Цвет текста*/
 	font-size: 20px;/*Размер шрифта*/
 }
@@ -77,7 +77,7 @@ nav{
 }
 .exempl_blok{
 	margin-top: 30px;
-	margin-left: 507px;
+	margin-left: 607px;
 	border: 3px solid #fff;
 	border-radius: 100%;
 	width: 15%;
@@ -94,7 +94,7 @@ nav{
 .container_1 input{/*Редактируем кнопки*/
 	text-align: center;/*Делаем текст внутри кнопок по центру*/
 	height: 30px;/*Установим высоту Кнопок*/
-	margin: 50px 300px 300px 510px;
+	margin: 100px 300px 300px 510px;
 	font-size: 20px;/*Устанавливаем размер шрифта для Кнопок*/
 	color: blueviolet;/*Устанавливаем цвет текста внутри кнопок*/
 	border: 2px solid blueviolet;/*Рисуем окантовку кнопок*/
