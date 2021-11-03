@@ -31,11 +31,11 @@ nav{
 .main{
 	width: 100%;/*Высота центрального окна*/
 	height: calc(100% - 38px);/*Высота Центрльного окна 100% минус 40 пикселей отведенных на меню*/
-	background: url(../img/1762b4f42c3f546ea8caffef73ced1d4.jpg) center/cover no-repeat;/*Размещение изображения по центру окна*/
+	background: url(../img/Рисунок_1.jpg) center/cover no-repeat;/*Размещение изображения по центру окна*/
 }
 .title_container{
 	float: left;
-	padding-left: 320px;/*Отступ слева*/
+	padding-left: 120px;/*Отступ слева*/
 	padding-top: 230px;/*Отступ сверху*/
 	color: blueviolet;/*цвет текста*/
 	text-align: center;/*Отцентровка текста*/
@@ -52,6 +52,7 @@ nav{
 }
 .title_container input{/*Редактируем кнопки*/
 	height: 30px;/*Установим высоту Кнопок*/
+	width: 150px;
 	text-align: center;/*Делаем текст внутри кнопок по центру*/
 	margin-top: 15px/*Отступ сверху*/;
 	margin-right: 20px;/*Делаем отступ между кнопками*/
@@ -65,7 +66,7 @@ nav{
 .container_1{
 	width: 100%;/*Ширина Блока*/
 	height: 100%;/*Высота Блока*/
-	background: url(../img/insect-6033093_960_720.jpg) center/cover no-repeat;/*Цвет заливки*/
+	/*background: url(../img/insect-6033093_960_720.jpg) center/cover no-repeat;*//*Цвет заливки*/
 }
 .container_1 h2{
 	text-align: center;
@@ -77,7 +78,7 @@ nav{
 }
 .exempl_blok{
 	margin-top: 30px;
-	margin-left: 607px;
+	margin-left: 506px;
 	border: 3px solid #fff;
 	border-radius: 100%;
 	width: 15%;
@@ -89,12 +90,12 @@ nav{
 	width: 70%;
 	text-align: center;
 	padding-left: 370px;
-	color: white;
+	color: black;
 }
 .container_1 input{/*Редактируем кнопки*/
 	text-align: center;/*Делаем текст внутри кнопок по центру*/
 	height: 30px;/*Установим высоту Кнопок*/
-	margin: 100px 300px 300px 510px;
+	margin: 30px 300px 100px 510px;
 	font-size: 20px;/*Устанавливаем размер шрифта для Кнопок*/
 	color: blueviolet;/*Устанавливаем цвет текста внутри кнопок*/
 	border: 2px solid blueviolet;/*Рисуем окантовку кнопок*/
@@ -105,7 +106,7 @@ nav{
 .container_2{
 	width: 100%;/*Ширина Блока*/
 	height: 100%;/*Высота Блока*/
-	background: url(../img/heaven.png) center/cover no-repeat;/*Цвет заливки*/
+	background: url(../img/depositphotos.jpg) center/cover no-repeat;/*Цвет заливки*/
 }
 .container_2 h2{
 	text-align: center;
@@ -131,6 +132,7 @@ nav{
 }
 .skills h3{
 	color: #f78755;
+	font-weight: bold;/*Делаем шрифт жирным*/
 }
 .container_3{
 	width: 100%;/*Ширина Блока*/
@@ -189,6 +191,147 @@ p.bloktext{
 	font-size: 20px;/*Устанавливаем размер шрифта для Кнопок*/
 	color: blueviolet;/*Устанавливаем цвет текста внутри кнопок*/
 	border: 2px solid blueviolet;/*Рисуем окантовку кнопок*/
+	background: none;/*Делаем заливку Кнопок прозрачной*/
+	border-radius: 7px;/*Закругляем углы рамки Кнопок*/
+	padding: 0px 16px;/*Ставим отступы от окантовки Кнопок сверху и снизу 0 пикселей, а с права и с лева 16 пикселей*/
+}
+.container_4{
+	width: 100%;/*Ширина Блока*/
+	height: 100%;/*Высота Блока*/
+	background: url(../img/fon_comp.jpg) center/cover no-repeat;/*Цвет заливки*/
+}
+.container_4 h2{
+	text-align: center;
+	font-size: 45px;/*Устанавливаем размер шрифта для Заголовка h2*/
+	font-weight: bold;/*Делаем шрифт жирным*/
+	text-transform: uppercase;
+	font-family: Times New Roman, sans-serif;/*Устанавливаем тип шрифта*/
+	padding-top: 260px;
+}
+.static{
+	float: left;
+	text-size: 10px;
+	margin-right: 15px;/*Отступ с права после каждого блока меню*/
+}
+.static li{
+	float: left;
+	width: 250px;
+	margin-top: 100px;
+	margin-left: 30px;
+	text-align: center;
+	margin-right: 10px;/*Отступ с права после каждого блока*/
+	line-height: 20px;/*Размещение текста внутри блока*/
+}
+.static h3{
+	color: #000;
+	font-size: 20px;
+}
+.container_5{
+	width: 100%;/*Ширина Блока*/
+	height: 100%;/*Высота Блока*/
+	background: #cbd7d6;
+}
+.container_5 h2{
+	text-align: center;
+	font-size: 45px;/*Устанавливаем размер шрифта для Заголовка h2*/
+	font-weight: bold;/*Делаем шрифт жирным*/
+	text-transform: uppercase;
+	font-family: Times New Roman, sans-serif;/*Устанавливаем тип шрифта*/
+	padding-top: 170px;
+}
+.blok_girl{
+	margin-top: 30px;
+	margin-left: 540px;
+	border-radius: 50%;
+	width: 10%;
+	height: 17%;
+	overflow: hidden;
+}
+.container_5 p{
+	width: 600px;
+	text-align: center;
+	margin-left: 285px;
+	font-size: 20px;/*Устанавливаем размер шрифта для Заголовка h2*/
+	font-family: Times New Roman, sans-serif;/*Устанавливаем тип шрифта*/
+	padding-top: 50px;
+}
+.contacts{
+	width: 100%;/*Ширина Блока*/
+	height: 100%;/*Высота Блока*/
+	background: url(../img/контакты_1.jpg) center/cover no-repeat;/*Цвет заливки*/;
+}
+.contacts h2{
+	text-align: center;
+	color: white;
+	font-size: 40px;/*Устанавливаем размер шрифта для Заголовка h2*/
+	font-weight: bold;/*Делаем шрифт жирным*/
+	text-transform: uppercase;
+	font-family: Times New Roman, sans-serif;/*Устанавливаем тип шрифта*/
+	padding-top: 50px;
+}
+.contacts p{
+	width: 600px;
+	color: white;
+	text-align: center;
+	margin-left: 285px;
+	font-size: 20px;/*Устанавливаем размер шрифта для Заголовка h2*/
+	font-family: Times New Roman, sans-serif;/*Устанавливаем тип шрифта*/
+	padding-top: 20px;
+}
+.contacts li{
+	float: left;
+	width: 250px;
+	margin-top: 30px;
+	margin-left: 100px;
+	text-align: center;
+	margin-right: 10px;/*Отступ с права после каждого блока*/
+	line-height: 15px;/*Размещение текста внутри блока*/
+}
+.contacts h3{
+	text-align: center;
+	color: white;
+	font-size: 20px;/*Устанавливаем размер шрифта для Заголовка h2*/
+	font-weight: bold;/*Делаем шрифт жирным*/
+	font-family: Times New Roman, sans-serif;/*Устанавливаем тип шрифта*/
+	padding-top: 15px;
+}
+.contacts h4{
+	width: 600px;
+	color: white;
+	text-align: center;
+	margin-left: 285px;
+	font-size: 20px;/*Устанавливаем размер шрифта для Заголовка h2*/
+	font-family: Times New Roman, sans-serif;/*Устанавливаем тип шрифта*/
+	padding-top: 140px;
+}
+.name_email{
+	width: 250px;
+	height: 25px;
+	color: #d2d6dc;
+	margin-left: 340px;
+	padding-left: 5px;
+	margin-top: 15px;
+}
+.name_email_1{
+	width: 250px;
+	height: 25px;
+	color: #d2d6dc;
+	padding-left: 5px;
+}
+.name_email_2{
+	width: 504px;
+	height: 235px;
+	color: #d2d6dc;
+	margin-top: 10px;
+	margin-left: 340px;
+}
+.name_email_3{/*Редактируем кнопки*/
+	text-align: center;/*Делаем текст внутри кнопок по центру*/
+	height: 30px;/*Установим высоту Кнопок*/
+	margin: 30px 300px 100px 510px;
+	font-size: 20px;/*Устанавливаем размер шрифта для Кнопок*/
+	color: #d2d6dc;/*Устанавливаем цвет текста внутри кнопок*/
+	border: 2px solid #d2d6dc;/*Рисуем окантовку кнопок*/
 	background: none;/*Делаем заливку Кнопок прозрачной*/
 	border-radius: 7px;/*Закругляем углы рамки Кнопок*/
 	padding: 0px 16px;/*Ставим отступы от окантовки Кнопок сверху и снизу 0 пикселей, а с права и с лева 16 пикселей*/
