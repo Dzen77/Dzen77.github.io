@@ -5,6 +5,9 @@ nav{
 	width: 100%;/*Ширина Блока Навигации*/
 	height: 38px;/*Высота Блока Навигации*/
 	background: #259584;/*Цвет заливки*/
+	position: fixed;
+	top: 0px;
+	left: 0px;
 }
 .logo{
 	color: #fff;/*Цвет текста*/
@@ -14,14 +17,14 @@ nav{
 	float: left;/*Нужно для размещения элементов блока Навигации на одной линии*/
 }
 .menu{
-	float: left;/*Нужно для размещения элементов блока Навигации на одной линии*/
+	/*float: left;*//*Нужно для размещения элементов блока Навигации на одной линии*/
 	padding-left: 600px;/*Отступ слева*/
 	color: #fff;/*Цвет текста*/
 	font-size: 20px;/*Размер шрифта*/
 }
 .menu li{
-	float: left;/*Нужно для размещения элементов блока Навигации на одной линии*/
-	font-size: 10px;/*Размер шрифта*/
+	float: right;/*Нужно для размещения элементов блока Навигации на одной линии*/
+	font-size: 12px;/*Размер шрифта*/
 	line-height: 40px;/*Размещение текста внутри блока Навигации*/
 	color: #fff;/*Цвет текста*/
 	margin-right: 15px;/*Отступ с права после каждого блока меню*/
@@ -74,28 +77,28 @@ nav{
 	font-weight: bold;/*Делаем шрифт жирным*/
 	text-transform: uppercase;
 	font-family: Times New Roman, sans-serif;/*Устанавливаем тип шрифта*/
-	padding-top: 100px;
+	padding-top: 10%;
 }
 .exempl_blok{
-	margin-top: 30px;
-	margin-left: 506px;
+	width: 13%;
+	height: 21%;
+	margin: 30px 44% 10px;
 	border: 3px solid #fff;
-	border-radius: 100%;
-	width: 15%;
-	height: 20%;
+	border-radius: 50%;
 	overflow: hidden;
 }
 .container_1 p{
 	margin-top: 30px;
-	width: 70%;
+	width: 50%;
 	text-align: center;
-	padding-left: 370px;
+	margin-left: auto;
+	margin-right: auto;
 	color: black;
 }
 .container_1 input{/*Редактируем кнопки*/
 	text-align: center;/*Делаем текст внутри кнопок по центру*/
 	height: 30px;/*Установим высоту Кнопок*/
-	margin: 30px 300px 100px 510px;
+	margin: 30px 45% 510px;
 	font-size: 20px;/*Устанавливаем размер шрифта для Кнопок*/
 	color: blueviolet;/*Устанавливаем цвет текста внутри кнопок*/
 	border: 2px solid blueviolet;/*Рисуем окантовку кнопок*/
@@ -118,8 +121,9 @@ nav{
 }
 .skills{
 	float: left;
+	text-align: center;
 	text-size: 10px;
-	margin-right: 15px;/*Отступ с права после каждого блока меню*/
+	width: 100%;/*Расположить блок на всю ширину экрана*/
 }
 .skills li{
 	float: left;
@@ -276,7 +280,7 @@ p.bloktext{
 	margin-left: 285px;
 	font-size: 20px;/*Устанавливаем размер шрифта для Заголовка h2*/
 	font-family: Times New Roman, sans-serif;/*Устанавливаем тип шрифта*/
-	padding-top: 20px;
+	padding-top: 10px;
 }
 .contacts li{
 	float: left;
@@ -302,7 +306,7 @@ p.bloktext{
 	margin-left: 285px;
 	font-size: 20px;/*Устанавливаем размер шрифта для Заголовка h2*/
 	font-family: Times New Roman, sans-serif;/*Устанавливаем тип шрифта*/
-	padding-top: 140px;
+	padding-top: 100px;
 }
 .name_email{
 	width: 250px;
@@ -325,14 +329,23 @@ p.bloktext{
 	margin-top: 10px;
 	margin-left: 340px;
 }
-.name_email_3{/*Редактируем кнопки*/
+.button{/*Редактируем кнопки*/
+	margin: 20px 520px;
 	text-align: center;/*Делаем текст внутри кнопок по центру*/
 	height: 30px;/*Установим высоту Кнопок*/
-	margin: 30px 300px 100px 510px;
 	font-size: 20px;/*Устанавливаем размер шрифта для Кнопок*/
 	color: #d2d6dc;/*Устанавливаем цвет текста внутри кнопок*/
 	border: 2px solid #d2d6dc;/*Рисуем окантовку кнопок*/
 	background: none;/*Делаем заливку Кнопок прозрачной*/
 	border-radius: 7px;/*Закругляем углы рамки Кнопок*/
 	padding: 0px 16px;/*Ставим отступы от окантовки Кнопок сверху и снизу 0 пикселей, а с права и с лева 16 пикселей*/
+}
+.imagin{
+	text-align: center;
+	margin-top: 30px;
+}
+.cont1{
+	height: 40px;
+	width: 40px;
+	margin-left: 10px;
 }
