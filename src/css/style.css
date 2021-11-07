@@ -1,13 +1,71 @@
+.loaderArea {
+  background: linear-gradient(90deg, #FF4E50 10%, #F9D423 90%);
+  overflow: hidden;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right:0;
+  bottom:0;
+  z-index: 100000;
+}
+.loader {
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  left: 50%;
+  margin-left: -20px;
+  top: 50%;
+  margin-top: -20px;
+}
+ 
+.loader:before,
+.loader:after {
+  content: "";
+  height: 40px;
+  width: 40px;
+  border: 8px solid rgba(255,255,255,.5);
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+}
+ 
+.loader:before {
+  animation: animate 2s infinite linear;
+}
+ 
+@keyframes animate {
+  0% {
+    transform: rotate(0) skew(0);
+  }
+   
+  100% {
+    transform: rotate(180deg) skew(360deg);
+  }
+}
+ 
+ 
+.loader:after {
+  animation: animate2 2s infinite linear;
+}
+ 
+@keyframes animate2 {
+  0% {
+    transform: rotate(0) skew(0);
+  }
+   
+  100% {
+    transform: rotate(-180deg) skew(-360deg);
+  }
+}
 body{
 	font-family: Arial, sans-serif;/*Устанавливаем тип шрифта для всего body*/
 }
+
 nav{
 	width: 100%;/*Ширина Блока Навигации*/
 	height: 38px;/*Высота Блока Навигации*/
 	background: #259584;/*Цвет заливки*/
 	position: fixed;
-	top: 0px;
-	left: 0px;
 }
 .logo{
 	color: #fff;/*Цвет текста*/
@@ -16,30 +74,94 @@ nav{
 	padding-left: 50px;/*Отступ слева*/
 	float: left;/*Нужно для размещения элементов блока Навигации на одной линии*/
 }
+@keyframes comming{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+.logo{/*Объявляем анимацию @keyframes с именем comming для элемента logo*/
+	-webkit- animation: comming 2.0s ease;/*Задержка открытия logo - 2 секунды*/
+	-o- animation: comming 2.0s ease;/*Задержка открытия logo - 2 секунды*/
+	animation: comming 2.0s ease;/*Задержка открытия logo - 2 секунды*/
+}
 .menu{
-	/*float: left;*//*Нужно для размещения элементов блока Навигации на одной линии*/
-	padding-left: 600px;/*Отступ слева*/
-	color: #fff;/*Цвет текста*/
-	font-size: 20px;/*Размер шрифта*/
+	padding-left: 470px;/*Отступ слева*/
+	float: right;/*Прижимаем меню к правому краю окна*/
+	margin-right: 25px;/*Отступ справа блока меню от правой границы окна*/
 }
 .menu li{
-	float: right;/*Нужно для размещения элементов блока Навигации на одной линии*/
+	float: left;/*Нужно для размещения элементов блока Навигации на одной линии*/
 	font-size: 12px;/*Размер шрифта*/
-	line-height: 40px;/*Размещение текста внутри блока Навигации*/
+	line-height: 26px;/*Размещение текста внутри блока Навигации*/
 	color: #fff;/*Цвет текста*/
-	margin-right: 15px;/*Отступ с права после каждого блока меню*/
+	margin-left: 20px;/*Отступ справа после каждого блока меню*/
 	text-transform: uppercase;/*Сделаем все буквы - заглавными*/
 	padding-top: 7px;/*Отступ сверху*/
 }
+.menu li a{
+	transition: all 0.2s;
+	color: white;
+	transform: scale(1.0);
+	display: inline-block;/*Делаем строчный элемент - блочным*/
+}
+.menu li a: visited{
+	color: white;
+}
+.menu li a:hover{
+	color: #e88604;
+	transform: scale(1.1);
+}
+.menu li a:active{
+	transform: scale(1.3);
+	color: blueviolet;
+}
+@keyframes topshift{/*Объявляем анимацию @keyframes с именем topshift для элементов меню li*/
+	from{
+		opacity: 0;
+		margin-top: -80px;
+	}
+	to{
+		opacity: 1;
+		margin-top: 0px;
+	}
+}
+.menu li{
+	-webkit- animation: topshift 0.5s ease forwards;/*Задержка открытия li - 2 секунды*/
+	-o- animation: topshift 0.5s ease forwards;/*Задержка открытия li - 2 секунды*/
+	animation: topshift 0.5s ease forwards;/*Задержка открытия li - 2 секунды*/
+	opacity: 0;
+}
+.menu li:nth-child(2){
+	animation-delay: 0.4s;
+}
+.menu li:nth-child(3){
+	animation-delay: 0.8s;
+}
+.menu li:nth-child(4){
+	animation-delay: 1.2s;
+}
+.menu li:nth-child(5){
+	animation-delay: 1.6s;
+}
+.menu li:nth-child(6){
+	animation-delay: 2.0s;
+}
+
+main{
+	width: 100%;/*Ширина блока main*/
+	height: 100%;/*Высота блока main*/
+}
 .main{
-	width: 100%;/*Высота центрального окна*/
-	height: calc(100% - 38px);/*Высота Центрльного окна 100% минус 40 пикселей отведенных на меню*/
+	width: 100%;/*Ширина центрального окна*/
+	height: 100%;/*Высота Центрльного окна*/
 	background: url(../img/Рисунок_1.jpg) center/cover no-repeat;/*Размещение изображения по центру окна*/
 }
 .title_container{
 	float: left;
-	padding-left: 120px;/*Отступ слева*/
-	padding-top: 230px;/*Отступ сверху*/
+	margin: 350px 0px 0px 250px;/*Устанавливаем внешние отступы блока*/
 	color: blueviolet;/*цвет текста*/
 	text-align: center;/*Отцентровка текста*/
 	font-family: Times New Roman, sans-serif;/*Устанавливаем тип шрифта*/
@@ -66,6 +188,38 @@ nav{
 	border-radius: 7px;/*Закругляем углы рамки Кнопок*/
 	padding: 0px 16px;/*Ставим отступы от окантовки Кнопок сверху и снизу 0 пикселей, а с права и с лева 16 пикселей*/
 }
+.title_container input{
+	transition: all 0.4s;/*Время на изменение характеристик блока при изменении его свойств*/
+	transform: scale(1.0);/*Изначальный размер блока*/
+}
+.title_container input:hover{/*Изменение блока при наведении мыши*/
+	background: #e88604;/*Цвет заливки кнопки при наведении мыши*/
+	color: white;/*Цвет текста кнопки при наведении мыши*/
+}
+.title_container input:active{/*Изменение блока при его активации*/
+	transform: scale(1.1);/*Увеличение размеров блока при его активации*/
+}
+@keyframes leftcoteiner{/*Объявляем анимацию @keyframes с именем leftcoteiner для Главного заголовка*/
+	from{
+		opacity: 0;/*Начальное положение заголовка*/
+		margin-left: -500px;/*Прячем Заголовок с левой стороны за границей окна*/
+	}
+	to{
+		opacity: 1;/*Конечное положение заголовка*/
+		margin-left: 250px;/*Заголовок выплывает с левой стороны граници окна*/
+	}
+}
+.title_container{
+	-webkit- animation: leftcoteiner 1.0s ease forwards;/*Задержка всплытия Главного Заголовка в секундах*/
+	-o- animation: leftcoteiner 1.0s ease forwards;/*Задержка всплытия Главного Заголовка в секундах*/
+	animation: leftcoteiner 1.0s ease forwards;/*Задержка всплытия Главного Заголовка в секундах*/
+	opacity: 0;
+	-webkit- animation-delay: 2.0s;
+	-o- animation-delay: 2.0s;
+	animation-delay: 2.0s;
+	opacity: 0;
+}
+
 .container_1{
 	width: 100%;/*Ширина Блока*/
 	height: 100%;/*Высота Блока*/
@@ -91,9 +245,49 @@ nav{
 	margin-top: 30px;
 	width: 50%;
 	text-align: center;
-	margin-left: auto;
-	margin-right: auto;
-	color: black;
+	margin-left: 450px;
+	margin-right: 250px;
+	color: saddlebrown;
+}
+@keyframes left_paragraf_1{/*Объявляем анимацию @keyframes с именем leftcoteiner для Главного заголовка*/
+	from{
+		opacity: 0;/*Начальное положение заголовка*/
+		margin-left: -600px;/*Прячем Заголовок с левой стороны за границей окна*/
+	}
+	to{
+		opacity: 1;/*Конечное положение заголовка*/
+		margin-left: 450px;/*Заголовок выплывает с левой стороны граници окна*/
+	}
+}
+.paragraf_1{
+	-webkit- animation: left_paragraf_1 2.0s ease forwards;/*Задержка выплывания первого параграфа в секундах*/
+	-o- animation: left_paragraf_1 2.0s ease forwards;/*Задержка выплывания первого параграфа в секундах*/
+	animation: left_paragraf_1 2.0s ease forwards;/*Задержка выплывания первого параграфа в секундах*/
+	opacity: 0;
+	-webkit- animation-delay: 3.0s;
+	-o- animation-delay: 3.0s;
+	animation-delay: 3.0s;
+	opacity: 0;
+}
+@keyframes right_paragraf_2{/*Объявляем анимацию @keyframes с именем right_paragraf_2 для Главного заголовка*/
+	from{
+		opacity: 0;/*Начальное положение заголовка*/
+		margin-left: 1200px;/*Прячем Заголовок с левой стороны за границей окна*/
+	}
+	to{
+		opacity: 1;/*Конечное положение заголовка*/
+		margin-left: 450px;/*Заголовок выплывает с левой стороны граници окна*/
+	}
+}
+.paragraf_2{
+	-webkit- animation: right_paragraf_2 2.0s ease forwards;/*Задержка выплывания второго параграфа в секундах*/
+	-o- animation: right_paragraf_2 2.0s ease forwards;/*Задержка выплывания второго параграфа в секундах*/
+	animation: right_paragraf_2 2.0s ease forwards;/*Задержка выплывания второго параграфа в секундах*/
+	opacity: 0;
+	-webkit- animation-delay: 4.0s;
+	-o- animation-delay: 4.0s;
+	animation-delay: 4.0s;
+	opacity: 0;
 }
 .container_1 input{/*Редактируем кнопки*/
 	text-align: center;/*Делаем текст внутри кнопок по центру*/
@@ -120,18 +314,16 @@ nav{
 	padding-top: 200px;
 }
 .skills{
-	float: left;
-	text-align: center;
 	text-size: 10px;
 	width: 100%;/*Расположить блок на всю ширину экрана*/
+	margin-left: 100px;
 }
 .skills li{
 	float: left;
 	width: 250px;
 	margin-top: 100px;
-	margin-left: 30px;
 	text-align: center;
-	margin-right: 10px;/*Отступ с права после каждого блока*/
+	margin-right: 30px;/*Отступ с права после каждого блока*/
 	line-height: 20px;/*Размещение текста внутри блока*/
 }
 .skills h3{
@@ -199,10 +391,19 @@ p.bloktext{
 	border-radius: 7px;/*Закругляем углы рамки Кнопок*/
 	padding: 0px 16px;/*Ставим отступы от окантовки Кнопок сверху и снизу 0 пикселей, а с права и с лева 16 пикселей*/
 }
+.parallax {
+    background: url(../img/fon_comp.jpg) center/cover no-repeat/*url(../img/bg.jpg)*/;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
 .container_4{
 	width: 100%;/*Ширина Блока*/
 	height: 100%;/*Высота Блока*/
-	background: url(../img/fon_comp.jpg) center/cover no-repeat;/*Цвет заливки*/
 }
 .container_4 h2{
 	text-align: center;
@@ -353,7 +554,7 @@ p.bloktext{
 	margin-top: 30px;
 }
 .cont1{
-	height: 40px;
+	height: 25px;
 	width: 40px;
 	margin-left: 10px;
 }
