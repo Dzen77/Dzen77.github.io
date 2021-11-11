@@ -17,7 +17,6 @@
   top: 50%;
   margin-top: -20px;
 }
- 
 .loader:before,
 .loader:after {
   content: "";
@@ -28,35 +27,24 @@
   position: absolute;
   top: 0;
 }
- 
 .loader:before {
   animation: animate 2s infinite linear;
 }
- 
 @keyframes animate {
-  0% {
-    transform: rotate(0) skew(0);
-  }
-   
-  100% {
-    transform: rotate(180deg) skew(360deg);
-  }
+  0% {transform: rotate(0) skew(0);}
+  100% {transform: rotate(180deg) skew(360deg);}
 }
- 
- 
 .loader:after {
   animation: animate2 2s infinite linear;
 }
- 
 @keyframes animate2 {
-  0% {
-    transform: rotate(0) skew(0);
-  }
-   
-  100% {
-    transform: rotate(-180deg) skew(-360deg);
-  }
+  0% {transform: rotate(0) skew(0);} 
+  100% {transform: rotate(-180deg) skew(-360deg);}
 }
+.loaderArea {/*Отключатель Лоадера*/
+     display: none !important;
+}
+
 body{
 	font-family: Arial, sans-serif;/*Устанавливаем тип шрифта для всего body*/
 }
@@ -157,17 +145,17 @@ main{
 .main{
 	width: 100%;/*Ширина центрального окна*/
 	height: 100%;/*Высота Центрльного окна*/
-	background: url(../img/Рисунок_1.jpg) center/cover no-repeat;/*Размещение изображения по центру окна*/
+	background: url(../img/777.png) 100% 100%/auto 90% no-repeat, url(../img/555.jpg) center/cover no-repeat;/*Размещение изображения по центру окна*/
 }
 .title_container{
 	float: left;
-	margin: 350px 0px 0px 250px;/*Устанавливаем внешние отступы блока*/
+	margin: 400px 0px 0px 250px;/*Устанавливаем внешние отступы блока*/
 	color: blueviolet;/*цвет текста*/
 	text-align: center;/*Отцентровка текста*/
 	font-family: Times New Roman, sans-serif;/*Устанавливаем тип шрифта*/
 }
 .title_container h1{/*Редактируем Главный заголовок*/
-	font-size: 60px;/*Устанавливаем размер шрифта для Заголовка h1*/
+	font-size: 80px;/*Устанавливаем размер шрифта для Заголовка h1*/
 	font-weight: bold;/*Делаем шрифт жирным*/
 }
 .title_container h4{/*Редактируем второй заголовок*/
@@ -233,6 +221,23 @@ main{
 	font-family: Times New Roman, sans-serif;/*Устанавливаем тип шрифта*/
 	padding-top: 10%;
 }
+hr {
+    height: 20px;
+    margin: 30px auto;
+    width: 70%;
+    background-image: radial-gradient(farthest-side at 50% -50%, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+    position: relative;
+    border: none;
+}
+hr:before {
+    height: 1px;
+    position: absolute;
+    top: -1px;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75) 50%, rgba(0, 0, 0, 0));
+}
+
 .exempl_blok{
 	width: 13%;
 	height: 21%;
@@ -316,14 +321,14 @@ main{
 .skills{
 	text-size: 10px;
 	width: 100%;/*Расположить блок на всю ширину экрана*/
-	margin-left: 100px;
+	margin-left: 250px;
 }
 .skills li{
 	float: left;
 	width: 250px;
 	margin-top: 100px;
 	text-align: center;
-	margin-right: 30px;/*Отступ с права после каждого блока*/
+	margin-right: 50px;/*Отступ с права после каждого блока*/
 	line-height: 20px;/*Размещение текста внутри блока*/
 }
 .skills h3{
@@ -345,7 +350,7 @@ main{
 }
 p.bloktext{
 	text-align: center;
-	font-size: 15px;
+	font-size: 20px;
 }
 .site{
 	display: block;
@@ -361,29 +366,32 @@ p.bloktext{
 	text-align: center;
 	font-size: 30px;
 	font-weight: bold;
-	padding-top: 200px;
+	padding-top: 250px;
+	margin-bottom: 80px;
 }
 .calc h3{
 	margin-top: 20px;
-	margin-left: 400px;
+	margin-left: 630px;
 	font-weight: bold;
 	padding-bottom: 5px;
 }
 .calc select{
-	margin-left: 400px;
+	margin-left: 630px;
 	width: 410px;
 	height: 25px;
 	background: #eeee;
 }
 .calc p{
-	margin-left: 400px;
+	margin-left: 630px;
 	font-weight: bold;
 	padding-top: 15px;
 }
 .calc input{/*Редактируем кнопки*/
 	text-align: center;/*Делаем текст внутри кнопок по центру*/
 	height: 30px;/*Установим высоту Кнопок*/
-	margin: 50px 300px 300px 510px;
+	/*margin: 50px 300px 300px 730px;*/
+	display: block;
+	margin: 50px auto;
 	font-size: 20px;/*Устанавливаем размер шрифта для Кнопок*/
 	color: blueviolet;/*Устанавливаем цвет текста внутри кнопок*/
 	border: 2px solid blueviolet;/*Рисуем окантовку кнопок*/
@@ -391,7 +399,7 @@ p.bloktext{
 	border-radius: 7px;/*Закругляем углы рамки Кнопок*/
 	padding: 0px 16px;/*Ставим отступы от окантовки Кнопок сверху и снизу 0 пикселей, а с права и с лева 16 пикселей*/
 }
-.parallax {
+.parallax {/*Создаем Паралакс эффект*/
     background: url(../img/fon_comp.jpg) center/cover no-repeat/*url(../img/bg.jpg)*/;
     background-attachment: fixed;
     width: 100%;
@@ -414,9 +422,8 @@ p.bloktext{
 	padding-top: 260px;
 }
 .static{
-	float: left;
 	text-size: 10px;
-	margin-right: 15px;/*Отступ с права после каждого блока меню*/
+	margin-left: 250px;/*Отступ с права после каждого блока меню*/
 }
 .static li{
 	float: left;
@@ -434,7 +441,7 @@ p.bloktext{
 .container_5{
 	width: 100%;/*Ширина Блока*/
 	height: 100%;/*Высота Блока*/
-	background: #cbd7d6;
+	background: #a1d1d6;
 }
 .container_5 h2{
 	text-align: center;
@@ -446,7 +453,7 @@ p.bloktext{
 }
 .blok_girl{
 	margin-top: 30px;
-	margin-left: 540px;
+	margin-left: 750px;
 	border-radius: 50%;
 	width: 10%;
 	height: 17%;
@@ -455,7 +462,7 @@ p.bloktext{
 .container_5 p{
 	width: 600px;
 	text-align: center;
-	margin-left: 285px;
+	margin-left: 530px;
 	font-size: 20px;/*Устанавливаем размер шрифта для Заголовка h2*/
 	font-family: Times New Roman, sans-serif;/*Устанавливаем тип шрифта*/
 	padding-top: 50px;
@@ -463,7 +470,7 @@ p.bloktext{
 .contacts{
 	width: 100%;/*Ширина Блока*/
 	height: 100%;/*Высота Блока*/
-	background: url(../img/контакты_1.jpg) center/cover no-repeat;/*Цвет заливки*/;
+	background: url(../img/1_fon.jpg) center/cover no-repeat;/*Цвет заливки*/;
 }
 .contacts h2{
 	text-align: center;
@@ -472,24 +479,27 @@ p.bloktext{
 	font-weight: bold;/*Делаем шрифт жирным*/
 	text-transform: uppercase;
 	font-family: Times New Roman, sans-serif;/*Устанавливаем тип шрифта*/
-	padding-top: 50px;
+	padding-top: 150px;
 }
 .contacts p{
 	width: 600px;
 	color: white;
 	text-align: center;
-	margin-left: 285px;
+	margin-left: 530px;
 	font-size: 20px;/*Устанавливаем размер шрифта для Заголовка h2*/
 	font-family: Times New Roman, sans-serif;/*Устанавливаем тип шрифта*/
-	padding-top: 10px;
+	padding-top: 20px;
+}
+.contacts ul{
+	display: block;
+	margin-left: 260px;
 }
 .contacts li{
 	float: left;
 	width: 250px;
-	margin-top: 30px;
+	margin-top: 60px;
 	margin-left: 100px;
 	text-align: center;
-	margin-right: 10px;/*Отступ с права после каждого блока*/
 	line-height: 15px;/*Размещение текста внутри блока*/
 }
 .contacts img{
@@ -507,17 +517,18 @@ p.bloktext{
 	width: 600px;
 	color: white;
 	text-align: center;
-	margin-left: 285px;
-	font-size: 20px;/*Устанавливаем размер шрифта для Заголовка h2*/
+	margin: 2px auto;
+	font-size: 25px;/*Устанавливаем размер шрифта для Заголовка h2*/
 	font-family: Times New Roman, sans-serif;/*Устанавливаем тип шрифта*/
-	padding-top: 100px;
+	padding-top: 150px;
+	word-spacing: 5px;
 }
 .name_email{
 	width: 250px;
 	height: 25px;
 	color: #000;
 	background: #d2d6dc;
-	margin-left: 340px;
+	margin-left: 576px;
 	padding-left: 5px;
 	margin-top: 15px;
 }
@@ -536,10 +547,11 @@ p.bloktext{
 	padding-left: 3px;
 	padding-top: 3px;
 	margin-top: 10px;
-	margin-left: 340px;
+	margin-left: 576px;
 }
 .button{/*Редактируем кнопки*/
-	margin: 20px 520px;
+	margin: 20px auto;
+	display: block;
 	text-align: center;/*Делаем текст внутри кнопок по центру*/
 	height: 30px;/*Установим высоту Кнопок*/
 	font-size: 20px;/*Устанавливаем размер шрифта для Кнопок*/
@@ -547,14 +559,13 @@ p.bloktext{
 	border: 2px solid #d2d6dc;/*Рисуем окантовку кнопок*/
 	background: none;/*Делаем заливку Кнопок прозрачной*/
 	border-radius: 7px;/*Закругляем углы рамки Кнопок*/
-	padding: 0px 16px;/*Ставим отступы от окантовки Кнопок сверху и снизу 0 пикселей, а с права и с лева 16 пикселей*/
+	padding: 0px 26px;/*Ставим отступы от окантовки Кнопок сверху и снизу 0 пикселей, а с права и с лева 16 пикселей*/
 }
 .imagin{
-	text-align: center;
-	margin-top: 30px;
+	margin: 40px 690px;
 }
 .cont1{
 	height: 25px;
 	width: 40px;
-	margin-left: 10px;
+	margin-left: 15px;
 }
