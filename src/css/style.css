@@ -95,9 +95,6 @@ nav{
 	transform: scale(1.0);
 	display: inline-block;/*Делаем строчный элемент - блочным*/
 }
-.menu li a: visited{
-	color: white;
-}
 .menu li a:hover{
 	color: #e88604;
 	transform: scale(1.1);
@@ -356,6 +353,38 @@ p.bloktext{
 	display: block;
 	margin: auto;
 	margin-top: 20px;
+}
+.client1{
+	color: white;
+	margin-left: 350px;
+	font-family: Times New Roman, sans-serif;/*Устанавливаем тип шрифта*/
+	font-weight: bold;/*Делаем шрифт жирным*/
+	width: 17%;/*Ширина Блока*/
+	float: left;
+}
+.client1 h3{
+	margin-top: 15px;
+	font-size: 25px;
+}
+.client1 p{
+	font-size: 20px;
+	padding-top: 3px;
+}
+.project{
+	float: left;
+	margin-left: 5px;
+	color: white;
+	font-family: Times New Roman, sans-serif;/*Устанавливаем тип шрифта*/
+	font-weight: bold;/*Делаем шрифт жирным*/
+	width: 35%;/*Ширина Блока*/
+}
+.project h3{
+	margin-top: 15px;
+	font-size: 25px;
+}
+.project p{
+	font-size: 20px;
+	padding-top: 3px;
 }
 .calc{
 	background: url(../img/calc_fon.jpg) center/cover no-repeat;/*Цвет заливки*/
